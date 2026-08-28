@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumaiya Rajpar — Web Developer & CS Student Portfolio</title>
+  <meta name="description" content="Portfolio of Sumaiya Rajpar, a Computer Science student and web developer in Karachi, turning ideas into beautiful and functional websites." />
+  <meta property="og:title" content="Sumaiya Rajpar — Web Developer & CS Student Portfolio" />
+  <meta property="og:description" content="Portfolio of Sumaiya Rajpar, a Computer Science student and web developer in Karachi, Pakistan." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header id="header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">Sumaiya<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#learning" class="nav-link">Learning</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light mode toggle -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <!-- Hamburger menu (mobile only) -->
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <!-- Floating decorative code symbols -->
+      <span class="float-code c1" aria-hidden="true">&lt; &gt;</span>
+      <span class="float-code c2" aria-hidden="true">{ }</span>
+      <span class="float-code c3" aria-hidden="true">/</span>
+      <span class="float-code c4" aria-hidden="true">&lt;/&gt;</span>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hi">Hi, I'm</p>
+          <h1>Sumaiya Rajpar</h1>
+          <h2 class="hero-role">
+            <span id="typing"></span><span class="cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="hero-tagline">"Turning ideas into beautiful and functional websites."</p>
+          <p class="hero-location">📍 Karachi, Pakistan</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Replace images/profile.jpg with your own photo (same filename) -->
+          <img src="images/profile.jpg" alt="Profile photo placeholder of Sumaiya Rajpar" class="profile-img" />
+          <p class="photo-note">Profile photo placeholder — replace <code>images/profile.jpg</code></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">A little introduction</p>
+
+        <div class="about-grid">
+          <article class="glass about-text">
+            <p>
+              I am a Computer Science student and aspiring web developer passionate about creating
+              modern, responsive, and user-friendly websites. I enjoy learning new technologies and
+              turning creative ideas into functional digital experiences.
+            </p>
+            <ul class="about-facts">
+              <li><strong>Name:</strong> Sumaiya Rajpar</li>
+              <li><strong>Title:</strong> Web Developer</li>
+              <li><strong>Studying:</strong> Computer Science</li>
+              <li><strong>Location:</strong> Karachi, Pakistan</li>
+            </ul>
+          </article>
+
+          <div class="cards-3">
+            <article class="glass card">
+              <div class="card-icon">💻</div>
+              <h3>Web Development</h3>
+              <p>Building web pages with clean HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="glass card">
+              <div class="card-icon">📱</div>
+              <h3>Responsive Design</h3>
+              <p>Layouts that adapt smoothly to phones, tablets, and desktops.</p>
+            </article>
+            <article class="glass card">
+              <div class="card-icon">🎨</div>
+              <h3>Creative Digital Experiences</h3>
+              <p>Turning creative ideas into interactive, friendly interfaces.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">Current self-assessed skill levels — not professional certifications</p>
+
+        <div class="skills-grid">
+          <!-- data-percent is read by JavaScript to animate each bar -->
+          <article class="glass skill">
+            <div class="skill-top"><span>HTML</span><span class="skill-value" data-percent="70">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="70"></div></div>
+          </article>
+          <article class="glass skill">
+            <div class="skill-top"><span>CSS</span><span class="skill-value" data-percent="65">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="65"></div></div>
+          </article>
+          <article class="glass skill">
+            <div class="skill-top"><span>JavaScript</span><span class="skill-value" data-percent="50">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="50"></div></div>
+          </article>
+          <article class="glass skill">
+            <div class="skill-top"><span>Adobe Photoshop</span><span class="skill-value" data-percent="75">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="75"></div></div>
+          </article>
+          <article class="glass skill">
+            <div class="skill-top"><span>C++</span><span class="skill-value" data-percent="50">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="50"></div></div>
+          </article>
+          <article class="glass skill">
+            <div class="skill-top"><span>Git &amp; GitHub</span><span class="skill-value" data-percent="45">0%</span></div>
+            <div class="bar"><div class="bar-fill" data-percent="45"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Student project concepts — live links coming soon</p>
+
+        <div class="projects-grid">
+          <article class="glass project">
+            <img src="images/project1.jpg" alt="Thumbnail for the Personal Portfolio Website project" loading="lazy" />
+            <div class="project-body">
+              <span class="status">Current Class Project</span>
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive personal portfolio website designed to showcase my skills, education, projects, and contact information.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button class="btn btn-ghost" disabled>Coming Soon</button>
+            </div>
+          </article>
+
+          <article class="glass project">
+            <img src="images/project2.jpg" alt="Thumbnail for Sam's Coffee Shop website project" loading="lazy" />
+            <div class="project-body">
+              <span class="status">Student Project</span>
+              <h3>Sam's Coffee Shop Website</h3>
+              <p>A modern and responsive coffee shop website featuring a welcoming homepage, menu section, services, and contact information.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button class="btn btn-ghost" disabled>Coming Soon</button>
+            </div>
+          </article>
+
+          <article class="glass project">
+            <img src="images/project3.jpg" alt="Thumbnail for the Interactive To-Do List project" loading="lazy" />
+            <div class="project-body">
+              <span class="status">Practice Project</span>
+              <h3>Interactive To-Do List</h3>
+              <p>An interactive to-do list application that allows users to add, complete, and remove tasks using JavaScript.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button class="btn btn-ghost" disabled>Coming Soon</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-sub">My academic journey</p>
+
+        <div class="timeline">
+          <article class="glass timeline-item">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="period">2026 – 2029</span>
+            <h3>Intermediate</h3>
+            <p>College</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING & DEVELOPMENT ============ -->
+    <section id="learning" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Learning &amp; Development</h2>
+        <p class="section-sub">Currently learning — no professional experience yet</p>
+
+        <div class="timeline two-col">
+          <article class="glass timeline-item">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Web Development</h3>
+            <p>Currently developing skills in HTML, CSS, and JavaScript through academic learning and personal projects.</p>
+          </article>
+          <article class="glass timeline-item">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Programming</h3>
+            <p>Building foundational programming knowledge through C++ and practical exercises.</p>
+          </article>
+          <article class="glass timeline-item">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Design</h3>
+            <p>Developing creative design skills using Adobe Photoshop.</p>
+          </article>
+          <article class="glass timeline-item">
+            <span class="dot" aria-hidden="true"></span>
+            <h3>Continuous Learning</h3>
+            <p>Exploring modern web-development techniques and improving my ability to create responsive and user-friendly websites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">What I Can Do</h2>
+        <p class="section-sub">Skills I can offer as a student developer</p>
+
+        <div class="services-grid">
+          <article class="glass card">
+            <div class="card-icon">⚙️</div>
+            <h3>Web Development</h3>
+            <p>Creating clean and functional websites using HTML, CSS, and JavaScript.</p>
+          </article>
+          <article class="glass card">
+            <div class="card-icon">📐</div>
+            <h3>Responsive Website Design</h3>
+            <p>Designing websites that work smoothly across desktops, tablets, and mobile phones.</p>
+          </article>
+          <article class="glass card">
+            <div class="card-icon">🖌️</div>
+            <h3>Graphic Design</h3>
+            <p>Creating visual content and designs using Adobe Photoshop.</p>
+          </article>
+          <article class="glass card">
+            <div class="card-icon">✨</div>
+            <h3>UI Design</h3>
+            <p>Creating simple, clean, and user-friendly website interfaces.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-sub">Let's get in touch</p>
+
+        <div class="contact-grid">
+          <div class="glass contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> <a href="mailto:rajparsumaiya@gmail.com">rajparsumaiya@gmail.com</a></p>
+            <p><strong>Location:</strong> Karachi, Pakistan</p>
+
+            <h3 class="mt">Social Links</h3>
+            <p class="hint">Placeholders — replace the <code>href</code> in index.html later.</p>
+            <div class="social-row">
+              <!-- TODO: replace "#" with your real profile URLs -->
+              <a href="#" class="btn btn-ghost social">Add GitHub</a>
+              <a href="#" class="btn btn-ghost social">Add LinkedIn</a>
+              <a href="#" class="btn btn-ghost social">Add Instagram</a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="glass contact-form" novalidate>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" />
+              <small class="error" id="subjectError"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary full">Send Message</button>
+            <p id="formSuccess" class="success" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3 class="logo">Sumaiya Rajpar</h3>
+        <p class="muted">"Turning ideas into beautiful and functional websites."</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Social</h4>
+        <ul class="footer-links">
+          <li><a href="#">Add GitHub</a></li>
+          <li><a href="#">Add LinkedIn</a></li>
+          <li><a href="#">Add Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sumaiya Rajpar. All Rights Reserved.</p>
+      <p class="muted">Designed &amp; Developed by Sumaiya Rajpar</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button (shown by JavaScript after scrolling) -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
